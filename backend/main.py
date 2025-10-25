@@ -12,7 +12,7 @@ from datetime import datetime
 from typing import Dict, Any
 
 # Import routers
-from backend.api.v1 import sources, analysis, reports, health
+from api.v1 import sources, analysis, reports, health
 
 # Import configuration
 from backend.core.config import settings
