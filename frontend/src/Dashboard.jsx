@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-// API base URL
-const API_BASE = 'http://localhost:8000/api/v1';
+// API base URL - use environment variable or fallback
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1';
 
 // Color scheme
 const COLORS = ['#A080FF', '#8B6FFF', '#FF6B6B', '#4ECDC4', '#FFE66D'];
