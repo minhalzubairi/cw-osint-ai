@@ -8,9 +8,9 @@ from typing import List, Dict, Any
 from datetime import datetime
 from pydantic import BaseModel, Field
 
-from backend.core.database import get_db
-from backend.models.database import DataSource
-from backend.collectors.factory import CollectorFactory
+from core.database import get_db
+from models.database import DataSource
+from collectors.factory import CollectorFactory
 
 router = APIRouter()
 

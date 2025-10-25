@@ -8,9 +8,9 @@ from typing import List, Dict, Any
 from datetime import datetime, timedelta
 from pydantic import BaseModel
 
-from backend.core.database import get_db
-from backend.models.database import Analysis, DataSource, CollectedData
-from backend.analyzers.ai_analyzer import AIAnalyzer
+from core.database import get_db
+from models.database import Analysis, DataSource, CollectedData
+from analyzers.ai_analyzer import AIAnalyzer
 
 router = APIRouter()
 

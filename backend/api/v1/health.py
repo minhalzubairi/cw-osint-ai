@@ -8,8 +8,8 @@ from datetime import datetime
 from typing import Dict, Any
 import psutil
 
-from backend.core.database import get_db, engine
-from backend.core.config import settings
+from core.database import get_db, engine
+from core.config import settings
 
 router = APIRouter()
 
