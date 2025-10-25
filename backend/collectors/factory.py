@@ -4,9 +4,9 @@ Creates appropriate collector instances based on source type
 """
 
 from typing import Dict, Any, List
-from backend.collectors.github_collector import GitHubCollector
+from  collectors.github_collector import GitHubCollector
 # Import other collectors as needed
-# from backend.collectors.rss_collector import RSSCollector
+# from  collectors.rss_collector import RSSCollector
 
 
 class CollectorFactory:

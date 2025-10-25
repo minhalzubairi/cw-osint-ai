@@ -8,7 +8,7 @@ from typing import Dict, Any, List
 from datetime import datetime, timedelta
 import logging
 
-from backend.models.database import CollectedData
+from  models.database import CollectedData
 
 logger = logging.getLogger(__name__)
 

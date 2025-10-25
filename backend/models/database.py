@@ -5,7 +5,7 @@ Database models for OSInt-AI
 from sqlalchemy import Column, Integer, String, DateTime, JSON, Boolean, Float, ForeignKey, Text
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from backend.core.database import Base
+from  core.database import Base
 
 
 class DataSource(Base):

@@ -15,8 +15,8 @@ from typing import Dict, Any
 from api.v1 import sources, analysis, reports, health
 
 # Import configuration
-from backend.core.config import settings
-from backend.core.database import engine, Base
+from  core.config import settings
+from  core.database import engine, Base
 
 # Configure logging
 logging.basicConfig(
@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     """Application lifespan events"""
     # Startup
-    logger.info("Starting OSInt-AI Backend...")
+    logger.info("Starting OSInt-AI  ..")
     logger.info(f"Version: {settings.APP_VERSION}")
     logger.info(f"Environment: {'Development' if settings.DEBUG else 'Production'}")
     
@@ -41,7 +41,7 @@ async def lifespan(app: FastAPI):
     yield
     
     # Shutdown
-    logger.info("Shutting down OSInt-AI Backend...")
+    logger.info("Shutting down OSInt-AI  ..")
 
 
 # Initialize FastAPI app
@@ -122,7 +122,7 @@ async def http_exception_handler(request, exc):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(
-        "backend.main:app",
+        " main:app",
         host="0.0.0.0",
         port=8000,
         reload=settings.DEBUG,

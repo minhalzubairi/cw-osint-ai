@@ -9,8 +9,8 @@ import os
 # Add parent directory to path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from backend.core.database import engine, Base
-from backend.models.database import DataSource, CollectedData, Analysis, Report, Alert
+from  core.database import engine, Base
+from  models.database import DataSource, CollectedData, Analysis, Report, Alert
 from sqlalchemy.orm import Session
 import logging
 

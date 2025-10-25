@@ -146,7 +146,7 @@ python scripts/init_db.py
 
 5. **Start the Backend**
 ```bash
-uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn  main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 6. **Frontend Setup** (in a new terminal)
